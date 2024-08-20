@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+:root {
+    --branco: hsl(0, 0%, 100%);
+    --verde: hsl(75, 94%, 57%);
+    --cinza-700: hsl(0, 0%, 20%);
+    --cinza-800: hsl(0, 0%, 12%);
+    --cinza-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+
+body {    
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--cinza-900);
+}
+
+main{
+    gap: 1.5rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: 10px;
+    background-color: var(--cinza-800);
+    color: var(--branco);
+    width: 25rem;
+    height: 40rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.main-info{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 100px;
+    width: 6rem;    
+}
+
+h1{
+    margin-bottom: .3rem;
+}
+
+h3{
+    color: var(--verde);
+}
+
+.links-container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;    
+}
+
+button{
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: var(--cinza-700);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--verde);
+    color: var(--cinza-900);
+}
+
+.attribution{
+    color: var(--branco);
+    margin-bottom: 2rem;
+}
+
+
+
+
+@media(max-width:375px){
+    main{
+        padding: 15px;
+        height: 39rem;
+        width: 20rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 5rem;       
+    }
+
+    .attribution{
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+  
+}
